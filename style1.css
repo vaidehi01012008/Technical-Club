@@ -1,0 +1,200 @@
+/* BASIC SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f5;
+    color: #222;
+    padding-bottom: 60px;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #163d2b;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/* BLOG SECTION */
+
+.blog {
+    padding: 50px 7%;
+}
+
+.blog > h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #163d2b;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    line-height: 1.6;
+}
+
+
+/* BLOG CARDS */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 30%;
+    min-width: 250px;
+    padding: 25px;
+    margin: 10px;
+    border: 2px solid #b7d9c2;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px #00000020;
+}
+
+.card-icon {
+    font-size: 45px;
+}
+
+.card h3 {
+    color: #1b4332;
+    font-size: 21px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #2d6a4f;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    background-color: #163d2b;
+}
+
+
+/* WORKOUT SECTION */
+
+.workout {
+    background-color: #e9f5ec;
+    padding: 55px 6%;
+}
+
+.workout > h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #163d2b;
+    margin-bottom: 10px;
+}
+
+.workout-intro {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+
+/* WORKOUT GRID */
+
+.workout-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+/* EXERCISE BOX */
+
+.exercise {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #b7d9c2;
+    border-radius: 10px;
+    min-height: 300px;
+    box-shadow: 0 4px 10px #00000015;
+}
+
+.exercise-image {
+    font-size: 55px;
+    background-color: #d8f3dc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.exercise h3 {
+    color: #163d2b;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.exercise p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.exercise strong {
+    color: #2d6a4f;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .workout-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .workout-grid {
+        grid-template-columns: 1fr;
+    }
+}
